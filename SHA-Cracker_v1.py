@@ -19,7 +19,7 @@ def generate(target_length: int, charset: str, user_hash, count=1, output=""):
             # yield output+char
             pass_candidate = output+char
             if crack(user_hash, pass_candidate):
-                print(f"====[Password Cracked Successfully, plaintext for {user_hash} is {pass_candidate}]====")
+                print(f"====[Password Cracked Successfully, plaintext for {user_hash} is '{pass_candidate}']====")
                 exit()
         
         if count != target_length:
