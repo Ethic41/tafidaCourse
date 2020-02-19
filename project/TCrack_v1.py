@@ -10,7 +10,7 @@ charset = ascii_lowercase
 
 def main():
     user_hash = input("###[Welcome to SHA-Cracker v1.0]###\nPlease Enter the Hash[SHA-1 only]:\n")
-    generate(5, charset, user_hash)
+    generate(6, charset, user_hash)
 
 
 def generate(target_length: int, charset: str, user_hash, count=1, output=""):
